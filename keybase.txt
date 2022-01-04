@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/hankwu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hankwu.github.io
+  * I am hankwu (https://keybase.io/hankwu) on keybase.
+  * I have a public key ASB_AwPB431H5HC9Vi8uymhpq_xGBUOb5SWlFvXkFr1hOwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202f3f9423dd66af8601c24741cb46bec4ab3e1bee6b42c4b19c3f5c4ad10a77970a",
+      "host": "keybase.io",
+      "kid": "01207f0303c1e37d47e470bd562f2eca6869abfc4605439be525a516f5e416bd613b0a",
+      "uid": "81952e0280dda8e06592eae35833ea19",
+      "username": "hankwu"
+    },
+    "merkle_root": {
+      "ctime": 1641277893,
+      "hash": "51c86eeaeedfd5a7fa5485eebde45f3de364ad4a4ce0b1209fcd2c5e57d18c22ce1bc112d7dd36be9c0eeb2ebfb38908ca6b9f7815d3bf74200744cb82e68486",
+      "hash_meta": "b5a5194e0c98dcd6738aa827cd8fd518b7fcb28ca8bb46263adda3a57ede433e",
+      "seqno": 21556029
+    },
+    "service": {
+      "entropy": "vbJO6mofvlAWTdShkerMIrb+",
+      "hostname": "hankwu.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1641277940,
+  "expire_in": 504576000,
+  "prev": "a2842d8b4fcf4c3157f241c7db9288b2091887d0d8f13c2689ee3026bd885afd",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfwMDweN9R+RwvVYvLspoaav8RgVDm+UlpRb15Ba9YTsKp3BheWxvYWTESpcCFMQgooQti0/PTDFX8kHH25KIsgkYh9DY8Twmie4wJr2IWv3EIBV4AQVtO07mqzu4XnUMa4vQXQiK6mnc9Y9EWsm4WoBcAgHCo3NpZ8RA/T7I00h0btki1dCKnv1dusez8bf4v7z71ilUjVoroE4qmfKznSfJvlWcFCRz5yaCGiBqEV7qwSkV86C+1M+xBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEhanOBEM5APDcoFpxN/BTnYDhPuk42MahJnkkbzeKx3o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hankwu
+
+==================================================================
