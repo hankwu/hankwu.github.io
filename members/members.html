@@ -60,9 +60,14 @@
         function renderMember(list, containerId) {
             const container = document.getElementById(containerId);
             let row = null;
+            cnt = 0;
 
-            list.forEach((member, index) => {
-                if (index % 3 === 0) {
+            for (var member_key in member_dict) {
+                
+                member = member_dict[member_key];
+                cnt = cnt+1;
+
+                if ( (cnt-1) % 3 === 0) {
                     row = document.createElement('div');
                     row.className = 'row';
                     container.appendChild(row);
@@ -167,13 +172,13 @@
         ];
 
         // Render static data
-        renderMember(faculty, 'faculty');
+//        renderMember(faculty, 'faculty');
 //        renderMember(current, 'current');
 		
         fetchJson('2021').then( json => renderMember(json, 'current') );
 
 
-        renderMember(alumni, 'alumni');
+  //      renderMember(alumni, 'alumni');
 
         // Activate tooltips
         $(function () {
