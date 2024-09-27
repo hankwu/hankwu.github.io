@@ -57,7 +57,7 @@
         }
 
         // Render a list of members
-        function renderMember(list, containerId) {
+        function renderMember(member_dict, containerId) {
             const container = document.getElementById(containerId);
             let row = null;
             cnt = 0;
@@ -144,15 +144,15 @@
                 col.appendChild(mediaDiv);
                 row.appendChild(col);
 
-                if (index % 3 === 2) {
+                if (cnt % 3 === 2) {
                     container.appendChild(row);
                 }
-            });
+            }
 
             // Close any remaining open row
-            if (list.length % 3 !== 0) {
+/*            if (list.length % 3 !== 0) {
                 container.appendChild(row);
-            }
+            }*/
         }
 
         // Example static members list (instead of reading from JSON files)
