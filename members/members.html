@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- header -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - SENSE: SEcurity aNd SystEms</title>
+    <style>
+        img.media-object {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<!-- body -->
+<body role="document">
+    <!-- Navbar -->
+    <nav> <!-- Navbar content --> </nav>
+    
+    <!-- main body -->
+    <div class="container theme-showcase" role="main">
+        <div class="page-header">
+            <h3>Group Leaders</h3>
+        </div>
+
+        <!-- Faculty -->
+        <div id="faculty"></div>
+
+        <div class="page-header">
+            <h3>Current Students</h3>
+        </div>
+
+        <!-- Current Students -->
+        <div id="current"></div>
+
+        <div class="page-header">
+            <h3>Alumni</h3>
+        </div>
+
+        <!-- Alumni -->
+        <div id="alumni"></div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer> <!-- Footer content --> </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="lib/jquery.lazyload.min.js"></script>
+    <script>
+        // Helper function to fetch and parse JSON data
+        async function fetchJson(filename) {
+            const response = await fetch(`${filename}.json`);
+            return response.json();
+        }
+
+        // Render a list of members
+        function renderMember(list, containerId) {
+            const container = document.getElementById(containerId);
+            let row = null;
+
+            list.forEach((member, index) => {
+                if (index % 3 === 0) {
+                    row = document.createElement('div');
+                    row.className = 'row';
+                    container.appendChild(row);
+                }
+
+                const col = document.createElement('div');
+                col.className = 'col-md-4 col-sm-6 col-xs-12';
+                const mediaDiv = document.createElement('div');
+                mediaDiv.className = 'media';
+
+                // Image
+                const mediaLeft = document.createElement('div');
+                mediaLeft.className = 'media-left';
+                const img = document.createElement('img');
+                img.className = 'media-object';
+                img.src = `members/photos/${member.photo || 'pumpkin_1.jpg'}`;
+                img.alt = '';
+                img.width = 96;
+                mediaLeft.appendChild(img);
+
+                // Media Body
+                const mediaBody = document.createElement('div');
+                mediaBody.className = 'media-body';
+
+                if (member.ename) {
+                    const ename = document.createElement('h5');
+                    ename.className = 'media-heading';
+                    ename.textContent = member.ename;
+                    mediaBody.appendChild(ename);
+                }
+                if (member.cname) {
+                    const cname = document.createElement('h5');
+                    cname.className = 'media-heading';
+                    cname.textContent = member.cname;
+                    mediaBody.appendChild(cname);
+                }
+
+                // Details
+                const small = document.createElement('small');
+                if (member.from) {
+                    small.textContent = `${member.from}—${member.to || ''}`;
+                }
+                if (member.class) {
+                    small.innerHTML += `<br/>${member.class}`;
+                }
+                if (member.with) {
+                    small.innerHTML += `<br/>Now with ${member.with}`;
+                }
+                mediaBody.appendChild(small);
+
+                // Contact
+                const pagination = document.createElement('ul');
+                pagination.className = 'pagination pagination-sm margin-v4px';
+                if (member.phone) {
+                    const phoneLi = document.createElement('li');
+                    phoneLi.innerHTML = `<span class='fa fa-phone' data-toggle='tooltip' data-placement='bottom' title='${member.phone}'></span>`;
+                    pagination.appendChild(phoneLi);
+                }
+                if (member.email) {
+                    const emailLi = document.createElement('li');
+                    emailLi.innerHTML = `<a href='mailto:${member.email}'><span class='fa fa-envelope-o'></span></a>`;
+                    pagination.appendChild(emailLi);
+                }
+                if (member.link) {
+                    const linkLi = document.createElement('li');
+                    linkLi.innerHTML = `<a href='${member.link}' target='_blank'><span class='fa fa-link'></span></a>`;
+                    pagination.appendChild(linkLi);
+                }
+                mediaBody.appendChild(pagination);
+
+                // Append to mediaDiv
+                mediaDiv.appendChild(mediaLeft);
+                mediaDiv.appendChild(mediaBody);
+                col.appendChild(mediaDiv);
+                row.appendChild(col);
+
+                if (index % 3 === 2) {
+                    container.appendChild(row);
+                }
+            });
+
+            // Close any remaining open row
+            if (list.length % 3 !== 0) {
+                container.appendChild(row);
+            }
+        }
+
+        // Example static members list (instead of reading from JSON files)
+        const faculty = [
+            { ename: "Yu-Sung Wu", cname: "吳育松", photo: "yusung.jpg" },
+            { ename: "Chun-Ying Huang", cname: "黃俊穎", photo: "chunying.jpg" }
+        ];
+
+        const current = [
+            { ename: "Ping-Wei Huang", cname: "黃秉為" },
+            { ename: "Ting-Hsuan Li", cname: "李亭萱" }
+        ];
+
+        const alumni = [
+            { ename: "Sanoop Mallissery", cname: "" },
+            { ename: "張秉洋", cname: "" }
+        ];
+
+        // Render static data
+        renderMember(faculty, 'faculty');
+        renderMember(current, 'current');
+		renderMember(fetchJson('2021'), 'current');
+
+        renderMember(alumni, 'alumni');
+
+        // Activate tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('img.lazyload').lazyload();
+        });
+    </script>
+</body>
+</html>
