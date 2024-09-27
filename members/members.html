@@ -52,7 +52,7 @@
     <script>
         // Helper function to fetch and parse JSON data
         async function fetchJson(filename) {
-            const response = await fetch(`${filename}.json`);
+            const response = await fetch(`https://hankwu.github.io//members/${filename}.json`);
             return response.json();
         }
 
@@ -168,8 +168,10 @@
 
         // Render static data
         renderMember(faculty, 'faculty');
-        renderMember(current, 'current');
-		renderMember(fetchJson('2021'), 'current');
+//        renderMember(current, 'current');
+		
+        fetchJson('2021').then( json => renderMember(json, 'current') );
+
 
         renderMember(alumni, 'alumni');
 
