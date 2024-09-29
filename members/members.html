@@ -11,7 +11,9 @@
         }
 
         h3 {
-           font-size:7vw; 
+           font-size:4vw; 
+           margin-block-start: auto;
+           margin-block-end: auto;           
         }
 
 
@@ -44,19 +46,14 @@
             <img src = "images/mountain.jpg"   style="width:100%;">
         </div>
 
-        <div class="page-header">
-            <h3>Current Students</h3>
-        </div>
+    
 
-        <!-- Current Students -->
-        <div id="current" class="member-list"></div>
+        <div id="members_2023"><h3>2023</h3></div>
+        <div id="members_2022"><h3>2022</h3></div>
+        <div id="members_2021"><h3>2021</h3></div>
+        
+    
 
-        <div class="page-header">
-            <h3>Alumni</h3>
-        </div>
-
-        <!-- Alumni -->
-        <div id="alumni" class="member-list"></div>
 
     </div>
 
@@ -78,6 +75,13 @@
         // Render a list of members
         function renderMember(member_dict, containerId) {
             const container = document.getElementById(containerId);
+           
+            const member_list = document.createElement('div');
+                   
+            member_list.className = 'member-list';
+    
+            container.appendChild(member_list);
+
             let row = null;
             let cnt = 0;
 
@@ -95,7 +99,7 @@
                 if (member.cname) {
                     let member_div = document.createElement('div');
                     member_div.className = 'member';
-                    container.appendChild(member_div);
+                    member_list.appendChild(member_div);
 
                     let cname = document.createElement('h5');
                     cname.className = 'name';
@@ -117,7 +121,9 @@
 
         // Render static data
 		
-        fetchJson('2021').then( json => renderMember(json, 'current') );
+        fetchJson('2023').then( json => renderMember(json, 'members_2023') );
+        fetchJson('2022').then( json => renderMember(json, 'members_2022') );
+        fetchJson('2021').then( json => renderMember(json, 'members_2021') );
 
 
   //      renderMember(alumni, 'alumni');
