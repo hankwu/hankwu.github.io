@@ -1,20 +1,10 @@
 {
-  "戴宏諺": {
-    "cname": "戴宏諺",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "s0913768710@gmail.com",
-    "link": "https://www.facebook.com/profile.php?id=100004882543174",
-    "photo": "戴宏諺_1.jpg"
-  },
+
   "朱彥瑜": {
     "cname": "朱彥瑜",
     "ename": null,
     "from": 2021,
-    "to": -1,
+    "to": 2023,
     "class": "Master",
     "with": null,
     "email": "simpson880114.cs10@nycu.edu.tw",
@@ -36,7 +26,7 @@
     "cname": "莊舜勛",
     "ename": null,
     "from": 2021,
-    "to": -1,
+    "to": 2024,
     "class": "Master",
     "with": null,
     "email": "cscneko.cs06@nycu.edu.tw",
@@ -47,7 +37,7 @@
     "cname": "林柏均",
     "ename": null,
     "from": 2021,
-    "to": -1,
+    "to": 2023,
     "class": "Master",
     "with": null,
     "email": "b4435242@gmail.com",
@@ -69,77 +59,11 @@
     "cname": "張秉洋",
     "ename": null,
     "from": 2021,
-    "to": -1,
+    "to": 2024,
     "class": "Master",
     "with": null,
     "email": "pychang.cs10@nycu.edu.tw",
     "link": "https://www.facebook.com/profile.php?id=100003146670551",
     "photo": "張秉洋_1.jpg"
-  },
-  "徐曼妮": {
-    "cname": "徐曼妮",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "amoroamnia@gmail.com",
-    "link": null,
-    "photo": null
-  },
-  "高瑋哲": {
-    "cname": "高瑋哲",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "skps96g309@gmail.com",
-    "link": null,
-    "photo": null
-  },
-  "蔡旻哲": {
-    "cname": "蔡旻哲",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "mick0713.am06@nctu.edu.tw",
-    "link": "https://www.facebook.com/mick14759",
-    "photo": "蔡旻哲_1.jpg"
-  },
-  "杜萬珩": {
-    "cname": "杜萬珩",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "artis.hh.tu@gmail.com",
-    "link": "https://www.facebook.com/artis24106",
-    "photo": "杜萬珩_1.jpg"
-  },
-  "吳苡瑄": {
-    "cname": "吳苡瑄",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "iriswu959@gmail.com",
-    "link": "https://www.facebook.com/y1h5uan",
-    "photo": "吳苡瑄_1.jpg"
-  },
-  "張智諺": {
-    "cname": "張智諺",
-    "ename": null,
-    "from": 2021,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "cc85nod@gmail.com",
-    "link": null,
-    "photo": "張智諺_1.jpg"
   }
 }

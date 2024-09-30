@@ -23,7 +23,15 @@
             margin-block-end: auto;
         }
 
+        .year-group {
+            display: grid;
+            grid-template-columns: 18vw auto
+        }
+
+
+
         .member-list {
+            
             overflow: auto;
         }
 
@@ -46,13 +54,15 @@
             <img src = "images/mountain.jpg"   style="width:100%;">
         </div>
 
+
     
         <div id="classes">
-            <div id="class_current"><h3>Current</h3></div>
-            <div id="class_2023"><h3>2023</h3></div>
-            <div id="class_2022"><h3>2022</h3></div>
-            <div id="class_2021"><h3>2021</h3></div>
+            <div id="class_current" class="year-group"><h3>Current</h3>  <div class="member-list"></div> </div>
+            <div id="class_2023" class="year-group"><h3>2023</h3> <div class="member-list"></div></div>
+            <div id="class_2022" class="year-group"><h3>2022</h3> <div class="member-list"></div></div>
+            <div id="class_2021" class="year-group"><h3>2021</h3> <div class="member-list"></div> </div>
         </div>
+
     
 
 
@@ -106,11 +116,12 @@
                     }
 
                     let class_div = document.getElementById(target_class) ;
+                    let member_list_div = class_div.getElementsByClassName('member-list')[0];
 
                     if ( class_div) {
                         let member_div = document.createElement('div');
                         member_div.className = 'member';
-                        class_div.appendChild(member_div);
+                        member_list_div.appendChild(member_div);
                             
                         let cname = document.createElement('h5');
                         cname.className = 'name';
@@ -132,7 +143,7 @@
 		
    //     fetchJson('2023').then( json => renderMember(json, 'classes') );
    //     fetchJson('2022').then( json => renderMember(json, 'classes') );
-   //     fetchJson('2021').then( json => renderMember(json, 'classes') );
+          fetchJson('2021').then( json => renderMember(json, 'classes') );
 
 
   //      renderMember(alumni, 'alumni');
