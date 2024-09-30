@@ -47,11 +47,12 @@
         </div>
 
     
-
-        <div id="members_2023"><h3>2023</h3></div>
-        <div id="members_2022"><h3>2022</h3></div>
-        <div id="members_2021"><h3>2021</h3></div>
-        
+        <div id="classes">
+            <div id="class_current"><h3>Current</h3></div>
+            <div id="class_2023"><h3>2023</h3></div>
+            <div id="class_2022"><h3>2022</h3></div>
+            <div id="class_2021"><h3>2021</h3></div>
+        </div>
     
 
 
@@ -75,14 +76,14 @@
         // Render a list of members
         function renderMember(member_dict, containerId) {
             const container = document.getElementById(containerId);
-           
+         /*  
             const member_list = document.createElement('div');
                    
             member_list.className = 'member-list';
     
             container.appendChild(member_list);
+*/
 
-            let row = null;
             let cnt = 0;
 
             for (var member_key in member_dict) {
@@ -97,33 +98,41 @@
                 }*/
 
                 if (member.cname) {
-                    let member_div = document.createElement('div');
-                    member_div.className = 'member';
-                    member_list.appendChild(member_div);
+                    
+                    let target_class = 'class_current'; 
 
-                    let cname = document.createElement('h5');
-                    cname.className = 'name';
-                    cname.textContent = member.cname;
+                    if ( member.to > 2000) {
+                        target_class = 'class_' + String(member.to);
+                    }
 
-                    member_div.appendChild(cname);
+                    let class_div = document.getElementById(target_class) ;
+
+                    if ( class_div) {
+                        let member_div = document.createElement('div');
+                        member_div.className = 'member';
+                        class_div.appendChild(member_div);
+                            
+                        let cname = document.createElement('h5');
+                        cname.className = 'name';
+                        cname.textContent = member.cname;
+
+                        member_div.appendChild(cname);
+                    }
                 }
 
                 cnt = cnt+1;
             }
 
-            // Close any remaining open row
-/*            if (list.length % 3 !== 0) {
-                container.appendChild(row);
-            }*/
+
         }
 
 
 
         // Render static data
 		
-        fetchJson('2023').then( json => renderMember(json, 'members_2023') );
-        fetchJson('2022').then( json => renderMember(json, 'members_2022') );
-        fetchJson('2021').then( json => renderMember(json, 'members_2021') );
+   //     fetchJson('2023').then( json => renderMember(json, 'classes') );
+   //     fetchJson('2022').then( json => renderMember(json, 'classes') );
+   //     fetchJson('2021').then( json => renderMember(json, 'classes') );
 
 
   //      renderMember(alumni, 'alumni');
