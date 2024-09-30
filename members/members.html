@@ -58,7 +58,9 @@
     
         <div id="classes">
             <div id="class_current" class="year-group"><h3>Current</h3>  <div class="member-list"></div> </div>
-            <div id="class_2023" class="year-group"><h3>2023</h3> <div class="member-list"></div></div>
+            
+            <div id="class_2024" class="year-group"><h3>2024</h3> <div class="member-list"></div></div>
+             <div id="class_2023" class="year-group"><h3>2023</h3> <div class="member-list"></div></div>
             <div id="class_2022" class="year-group"><h3>2022</h3> <div class="member-list"></div></div>
             <div id="class_2021" class="year-group"><h3>2021</h3> <div class="member-list"></div> </div>
         </div>
@@ -85,7 +87,7 @@
 
         // Render a list of members
         function renderMember(member_dict, containerId) {
-            const container = document.getElementById(containerId);
+            let container = document.getElementById(containerId);
          /*  
             const member_list = document.createElement('div');
                    
@@ -115,7 +117,7 @@
                         target_class = 'class_' + String(member.to);
                     }
 
-                    let class_div = document.getElementById(target_class) ;
+                    let class_div = container.querySelector('#'+target_class) ;
                     let member_list_div = class_div.getElementsByClassName('member-list')[0];
 
                     if ( class_div) {
