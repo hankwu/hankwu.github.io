@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENSE: SEcurity aNd SystEms</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <style>
-        img.media-object {
-            margin-bottom: 24px;
+    
+
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
         }
 
-        h3 {
-           font-size:4vw; 
-           margin-block-start: auto;
-           margin-block-end: auto;           
-        }
-
-
-        h5 { 
+        .name { 
             font-size:3vw;
             margin-block-start: auto;
             margin-block-end: auto;
+            margin-right: 1em;
+        }        
+        .year-title {
+            font-size:4vw; 
+            margin-block-start: auto;
+            margin-block-end: auto;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            color:rgb(168, 50, 64);            
         }
 
         .year-group {
@@ -40,6 +57,30 @@
             padding: 0.5vw;
         }
 
+        .lab-name {
+            font-size: 5vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: "Times New Roman", Times, serif;
+            font-variant: small-caps;
+            width: 100%;
+            text-align: center;
+        }
+
+        .lab-image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .lab-image-container img {
+            display: block;
+            width: 100%;
+             height: auto;
+        }
+
     </style>
 </head>
 <!-- body -->
@@ -48,31 +89,33 @@
     <nav> <!-- Navbar content --> </nav>
     
     <!-- main body -->
-    <div class="container theme-showcase" role="main">
+    <div  role="main">
 
-        <div class=""page-header">
-            <img src = "images/mountain.jpg"   style="width:100%;">
+        <div class="lab-image-container" >
+            <img src = "images/mountain.jpg"  >
+            <div class="lab-name">Laboratory of Security and Systems</div>
         </div>
 
 
     
         <div id="classes">
-            <div id="class_current" class="year-group"><h3>Current</h3>  <div class="member-list"></div> </div>
+            <div id="class_current" class="year-group"><h3 class="year-title" style="font-size: 4vw; ">成員</h3>  <div class="member-list"> </div> </div> <hr/> 
+            <!--<div id="class_current" >  <div class="member-list" style="justify-content: space-evenly;"> </div> </div> <hr/> -->
             
-            <div id="class_2024" class="year-group"><h3>2024</h3> <div class="member-list"></div></div>
-            <div id="class_2023" class="year-group"><h3>2023</h3> <div class="member-list"></div></div>
-            <div id="class_2022" class="year-group"><h3>2022</h3> <div class="member-list"></div></div>
-            <div id="class_2021" class="year-group"><h3>2021</h3> <div class="member-list"></div> </div>
-            <div id="class_2020" class="year-group"><h3>2020</h3> <div class="member-list"></div> </div>
-            <div id="class_2019" class="year-group"><h3>2019</h3> <div class="member-list"></div> </div>
-            <div id="class_2018" class="year-group"><h3>2018</h3> <div class="member-list"></div> </div>
-            <div id="class_2017" class="year-group"><h3>2017</h3> <div class="member-list"></div> </div>
-            <div id="class_2016" class="year-group"><h3>2016</h3> <div class="member-list"></div> </div>
-            <div id="class_2015" class="year-group"><h3>2015</h3> <div class="member-list"></div> </div>
-            <div id="class_2014" class="year-group"><h3>2014</h3> <div class="member-list"></div> </div>
-            <div id="class_2013" class="year-group"><h3>2013</h3> <div class="member-list"></div> </div>
-            <div id="class_2012" class="year-group"><h3>2012</h3> <div class="member-list"></div> </div>
-            <div id="class_2011" class="year-group"><h3>2011</h3> <div class="member-list"></div> </div>
+            <div id="class_2024" class="year-group"><h3 class="year-title">2024</h3> <div class="member-list"> </div> </div> <hr/>
+            <div id="class_2023" class="year-group"><h3 class="year-title">2023</h3> <div class="member-list"></div></div>   <hr/>
+            <div id="class_2022" class="year-group"><h3 class="year-title">2022</h3> <div class="member-list"></div></div>  <hr/>
+            <div id="class_2021" class="year-group"><h3 class="year-title">2021</h3> <div class="member-list"></div> </div>  <hr/>
+            <div id="class_2020" class="year-group"><h3 class="year-title">2020</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2019" class="year-group"><h3 class="year-title">2019</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2018" class="year-group"><h3 class="year-title">2018</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2017" class="year-group"><h3 class="year-title">2017</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2016" class="year-group"><h3 class="year-title">2016</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2015" class="year-group"><h3 class="year-title">2015</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2014" class="year-group"><h3 class="year-title">2014</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2013" class="year-group"><h3 class="year-title">2013</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2012" class="year-group"><h3 class="year-title">2012</h3> <div class="member-list"></div> </div> <hr/>
+            <div id="class_2011" class="year-group"><h3 class="year-title">2011</h3> <div class="member-list"></div> </div>
 
         </div>
 
@@ -99,15 +142,10 @@
         // Render a list of members
         function renderMember(member_dict, containerId) {
             let container = document.getElementById(containerId);
-         /*  
-            const member_list = document.createElement('div');
-                   
-            member_list.className = 'member-list';
-    
-            container.appendChild(member_list);
-*/
-
             let cnt = 0;
+
+            if (member_dict==null || member_dict==undefined)
+                return;
 
             for (var member_key in member_dict) {
                 
