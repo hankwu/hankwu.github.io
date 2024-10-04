@@ -23,12 +23,13 @@
             padding: 0;
         }
 
+
         .name { 
             font-size:3vw;
             margin-block-start: auto;
             margin-block-end: auto;
-            margin-right: 1em;
         }        
+
         .year-title {
             font-size:4vw; 
             margin-block-start: auto;
@@ -55,6 +56,7 @@
         .member {
             float: left;
             padding: 0.5vw;
+            margin-right: 1em;            
         }
 
         .lab-name {
@@ -92,7 +94,7 @@
     <div  role="main">
 
         <div class="lab-image-container" >
-            <img src = "images/mountain.jpg"  >
+            <img src = "images/mountain.jpg"  alt="mountain"  >
             <div class="lab-name">Laboratory of Security and Systems</div>
         </div>
 
@@ -174,9 +176,23 @@
                         member_div.className = 'member';
                         member_list_div.appendChild(member_div);
                             
+                        if ( member.class == 'Ph.D.')  {
+  
+                        }
+
                         let cname = document.createElement('h5');
                         cname.className = 'name';
                         cname.textContent = member.cname;
+
+                        if ( member.class == 'Ph.D.')  {
+                            cname.style += ';color: rgb(201,130,38)';
+                        } 
+                        else if ( member.class == 'Master')  {
+                            cname.style += ';color: rgb(50, 50, 50)';
+                        } 
+                        else {
+                            cname.style += ';color: rgb(27, 141, 116)';
+                        }                              
 
                         member_div.appendChild(cname);
                     }
