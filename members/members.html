@@ -83,6 +83,14 @@
              height: auto;
         }
 
+        .legend_item {
+            float: left;
+            padding: 0.5vw;
+            margin-right: 1em;
+            font-size: 2vw;
+            font-variant: small-caps;          
+        }
+
     </style>
 </head>
 <!-- body -->
@@ -117,11 +125,19 @@
             <div id="class_2014" class="year-group"><h3 class="year-title">2014</h3> <div class="member-list"></div> </div> <hr/>
             <div id="class_2013" class="year-group"><h3 class="year-title">2013</h3> <div class="member-list"></div> </div> <hr/>
             <div id="class_2012" class="year-group"><h3 class="year-title">2012</h3> <div class="member-list"></div> </div> <hr/>
-            <div id="class_2011" class="year-group"><h3 class="year-title">2011</h3> <div class="member-list"></div> </div>
+            <div id="class_2011" class="year-group"><h3 class="year-title">2011</h3> <div class="member-list"></div> </div> <hr/>
 
+            <div class = "year-group">
+                <h3 class="year-title"></h3>
+                <div>
+                    <h5 class="legend_item" style="color: rgb(201,130,38)">Ph.D.</h6>
+                    <h5 class="legend_item" style="color: rgb(50, 50, 50)">Master</h6>
+                    <h5 class="legend_item" style="color: rgb(27, 141, 116)">Undergraduate Project</h5>
+                </div>
+            </div>
         </div>
 
-    
+
 
 
     </div>
@@ -176,10 +192,6 @@
                         member_div.className = 'member';
                         member_list_div.appendChild(member_div);
                             
-                        if ( member.class == 'Ph.D.')  {
-  
-                        }
-
                         let cname = document.createElement('h5');
                         cname.className = 'name';
                         cname.textContent = member.cname;
