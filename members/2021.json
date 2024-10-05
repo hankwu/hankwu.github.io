@@ -65,5 +65,38 @@
     "email": "pychang.cs10@nycu.edu.tw",
     "link": "https://www.facebook.com/profile.php?id=100003146670551",
     "photo": "張秉洋_1.jpg"
-  }
+  },
+  "陳少甫": {
+    "cname": "陳少甫",
+    "ename": null,
+    "from": 2021,
+    "to": 2022,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "王書帆": {
+    "cname": "王書帆",
+    "ename": null,
+    "from": 2021,
+    "to": 2022,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "張晏禎": {
+    "cname": "張晏禎",
+    "ename": null,
+    "from": 2021,
+    "to": 2022,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  }         
 }

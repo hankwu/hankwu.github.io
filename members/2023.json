@@ -64,5 +64,82 @@
     "email": null,
     "link": null,
     "photo": null
-  }
+  },
+  "劉秉庭": {
+    "cname": "劉秉庭",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "張瑋倫": {
+    "cname": "張瑋倫",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "鄭佳檳": {
+    "cname": "鄭佳檳",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "張介遠": {
+    "cname": "張介遠",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "莊宥瑋": {
+    "cname": "莊宥瑋",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "葉家蓁": {
+    "cname": "葉家蓁",
+    "ename": null,
+    "from": 2023,
+    "to": 2024,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  "吳宥毅": {
+    "cname": "吳宥毅",
+    "ename": null,
+    "from": 2023,
+    "to": 2023,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  }                       
 }
