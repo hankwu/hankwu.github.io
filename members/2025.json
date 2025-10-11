@@ -1,8 +1,69 @@
 {
-  "葉冠宜": {
-    "cname": "葉冠宜",
+  "黃奕筌": {
+    "cname": "黃奕筌",
     "ename": null,
-    "from": 2024,
+    "from": 2025
+    "to": -1,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": "",
+    "link": "",
+    "photo": ""
+  }
+  ,
+  
+  "張旭孝": {
+    "cname": "張旭孝",
+    "ename": null,
+    "from": 2025,
+    "to": -1,
+    "class": "Undergraduate Project Student",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  }
+  ,
+  "朱仲誠": {
+    "cname": "朱仲誠",
+    "ename": null,
+    "from": 2025,
+    "to": -1,
+    "class": "Master",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  
+  "成文瀚": {
+    "cname": "成文瀚",
+    "ename": null,
+    "from": 2025,
+    "to": -1,
+    "class": "Master",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  
+  "吳帛勳": {
+    "cname": "吳帛勳",
+    "ename": null,
+    "from": 2025,
+    "to": -1,
+    "class": "Master",
+    "with": null,
+    "email": null,
+    "link": null,
+    "photo": null
+  },
+  
+  "吳念蓉": {
+    "cname": "吳念蓉",
+    "ename": null,
+    "from": 2025,
     "to": -1,
     "class": "Master",
     "with": null,
@@ -10,67 +71,13 @@
     "link": "",
     "photo": ""
   },
-  "吳柏村": {
-    "cname": "吳柏村",
+  
+  "余威霆": {
+    "cname": "余威霆",
     "ename": null,
-    "from": 2024,
+    "from": 2025,
     "to": -1,
     "class": "Master",
-    "with": null,
-    "email": null,
-    "link": null,
-    "photo": null
-  },
-  "陳宇駿": {
-    "cname": "陳宇駿",
-    "ename": null,
-    "from": 2024,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": null,
-    "link": null,
-    "photo": null
-  },
-  "蕭旭傑": {
-    "cname": "蕭旭傑",
-    "ename": null,
-    "from": 2024,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": null,
-    "link": null,
-    "photo": null
-  },
-  "簡上博": {
-    "cname": "簡上博",
-    "ename": null,
-    "from": 2024,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": "",
-    "link": "",
-    "photo": ""
-  },
-  "宋哲頤": {
-    "cname": "宋哲頤",
-    "ename": null,
-    "from": 2024,
-    "to": -1,
-    "class": "Master",
-    "with": null,
-    "email": null,
-    "link": null,
-    "photo": null
-  },
-  "吳方庭": {
-    "cname": "吳方庭",
-    "ename": null,
-    "from": 2024,
-    "to": -1,
-    "class": "Ph.D.",
     "with": null,
     "email": null,
     "link": null,
