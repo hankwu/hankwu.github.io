@@ -157,7 +157,7 @@
     <script>
         // Helper function to fetch and parse JSON data
         async function fetchJson(filename) {
-            const response = await fetch(`https://hankwu.github.io//members/${filename}.json`);
+            const response = await fetch(`https://hankwu.github.io//members/${filename}.json`,  {cache: 'no-store' });
             return response.json();
         }
 
