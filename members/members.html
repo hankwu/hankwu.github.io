@@ -120,6 +120,8 @@
             <div id="class_current" class="year-group"><h3 class="year-title" style="font-size: 4vw; ">成員</h3>  <div class="member-list"> </div> </div> <hr/> 
             <!--<div id="class_current" >  <div class="member-list" style="justify-content: space-evenly;"> </div> </div> <hr/> -->
             
+            
+			<div id="class_2026" class="year-group"><h3 class="year-title">2026</h3> <div class="member-list"> </div> </div> <hr/>
 			<div id="class_2025" class="year-group"><h3 class="year-title">2025</h3> <div class="member-list"> </div> </div> <hr/>
             <div id="class_2024" class="year-group"><h3 class="year-title">2024</h3> <div class="member-list"> </div> </div> <hr/>
             <div id="class_2023" class="year-group"><h3 class="year-title">2023</h3> <div class="member-list"></div></div>   <hr/>
@@ -228,7 +230,7 @@
 
 
         // Render static data
-		for (var year = 2010; year <2026; year++) {
+		for (var year = 2010; year <2027; year++) {
           fetchJson(String(year)).then( json => renderMember(json, 'classes') );
         }    
 
